@@ -35,7 +35,7 @@ export default {
         // 验证用户名是否合法
         username:[
           { required: true, message: '请输入登录用户名', trigger: 'blur' },
-          { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+          { min: 3, max: 15, message: '长度在 3 到 15 个字符', trigger: 'blur' }
         ],
         // 验证密码是否合法
         password:[
