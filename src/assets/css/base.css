@@ -4,6 +4,7 @@ body,
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	min-width: 1366px;
 }
 a {
 	color: black;
@@ -44,9 +45,15 @@ a {
 	margin-top: 15px;
 	font-size: 13px;
 }
-.el-table colgroup col:nth-last-child(n){
-	display: table-cell !important;
+
+.el-table colgroup>col[name='gutter']{
+	display: none !important;
 }
+
 .el-pagination{
 	margin-top: 15px;
+}
+
+.el-table__body{
+	width: 100% !important;
 }
